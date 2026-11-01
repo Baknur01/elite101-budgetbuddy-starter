@@ -29,9 +29,7 @@ python -m unittest
 
 ## Team
 - Baknur building BudgetBuddy
-- Nihal building BudgetBuddy
-- Alperen building Budget Buddy
-- 
+  
 <!-- Add yourself here on your Git lesson: - Your Name (role) -->
 
 
