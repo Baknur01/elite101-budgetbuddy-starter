@@ -10,7 +10,13 @@ def account_summary(data):
 
 
 def category_report(data):
-    # TODO(ticket): tally each transaction into a {category: total amount} dict and return it.
-    # For now this returns an empty report so the menu never crashes.
+    """Total up the amount spent or earned in each category.
+
+    Returns a dict like {"food": -12.5, "income": 20.0}. An account with no
+    transactions returns an empty dict.
+    """
     report = {}
+    for t in data.get("transactions", []):
+        name = t["category"]
+        report[name] = round(report.get(name, 0) + t["amount"], 2)
     return report
