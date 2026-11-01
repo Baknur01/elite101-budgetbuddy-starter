@@ -30,7 +30,7 @@ python -m unittest
 ## Team
 
 <!-- Add yourself here on your Git lesson: - Your Name (role) -->
-
+Alperen building Budget Buddy
 - (your squad will add themselves here)
 
 ## Where to start
