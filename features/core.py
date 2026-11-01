@@ -26,6 +26,7 @@ def transactions_by_category(transactions, category):
 
 
 def count_by_category(transactions):
+    """Take a list of transactions and return a dictionary counting how many transactions are in each category."""
     counts = {}
     for t in transactions:
         name = t["category"]
