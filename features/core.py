@@ -22,6 +22,7 @@ def list_transactions(transactions, show=print):
 
 
 def transactions_by_category(transactions, category):
+    """Return the transactions whose category exactly matches category, or [] if none do."""
     return [t for t in transactions if t["category"] == category]
 
 
