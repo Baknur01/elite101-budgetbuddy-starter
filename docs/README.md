@@ -28,8 +28,10 @@ python -m unittest
 | `tests/test_core.py` | Example tests to copy from |
 
 ## Team
-
+- Baknur building BudgetBuddy
+  
 <!-- Add yourself here on your Git lesson: - Your Name (role) -->
+
 
 - (your squad will add themselves here)
 
