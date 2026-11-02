@@ -34,7 +34,9 @@ def count_by_category(transactions):
 
 
 def last_transaction(transactions):
-    return transactions[len(transactions) - 1]
+    if not transactions:
+        return None
+    return transactions[-1]
 
 
 def total_spent(transactions):
@@ -44,4 +46,4 @@ def total_spent(transactions):
 def average_transaction(transactions):
     if not transactions:
         return 0
-    return round(sum(t["amount"] for t in transactions) / (len(transactions) - 1), 2)
+    return round(sum(t["amount"] for t in transactions) / len(transactions), 2)
