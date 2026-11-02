@@ -64,3 +64,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+elif choice == "4": # (or whatever number is next in your menu)
+    cat = input("Enter category name to budget: ").strip()
+    limit = float(input("Enter budget limit: "))
+    core.set_budget(data, cat, limit)
+    storage.save_data(data)
+    print(f"Budget for {cat} set to {limit}!")

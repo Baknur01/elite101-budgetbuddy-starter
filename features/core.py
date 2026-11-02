@@ -45,3 +45,16 @@ def average_transaction(transactions):
     if not transactions:
         return 0
     return round(sum(t["amount"] for t in transactions) / len(transactions), 2)
+def set_budget(data, category, amount):
+    if "budgets" not in data:
+        data["budgets"] = {}
+    data["budgets"][category] = amount
+
+def check_budget(data, category):
+    if "budgets" not in data or category not in data["budgets"]:
+        return None
+    
+    # Calculate total spending in this category
+    spent = sum(t["amount"] for t in data["transactions"] if t.get("category") == category)
+    limit = data["budgets"][category]
+    return {"limit": limit, "spent": spent, "exceeded": spent > limit}
