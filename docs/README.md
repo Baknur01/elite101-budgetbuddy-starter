@@ -38,3 +38,7 @@ python -m unittest
 Pick a ticket from the `tickets/` folder (or the Issues tab once your section
 repo exists). Read `CONTRIBUTING.md` for the Definition of Done every pull
 request has to meet.
+
+## Features
+
+- **Top spending category** (ticket 03): `core.top_spending_category(transactions)` returns the category you spend the most on, or `None` if there are no expenses.
